@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Контакты - Моя первая веб-страница</title>
+    <link rel="stylesheet" href="/site/css/styles.css">
 </head>
 <body>
     <header>
@@ -20,24 +21,28 @@
             Веселый проспект, д.1<br>
             555-55-55<br>
         </address>       
-        <h3>Связаться с нами</h3> 
+        <div class="contact">
+            <h3>Связаться с нами</h3> 
         <form action="/">
+            <div class="row">
+        <div class="form-group">
            <label for="name">Ваше имя:</label>
-           <input type="text" id="name" placeholder="Введите имя">
-           <input type="submit">
-            <br>
-            <br>
-            <label for="mail">Ваш Email:</label>
-            <input type="text" id="mail" placeholder="Введите Email">
-            <input type="submit">
-            <br>
-            <br>
+           <input class="btn" type="text" id="name" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+            <label for="mail">Ваш email:</label>
+            <input class="btn" type="text" id="mail" placeholder="Введите Email">
+        </div>
+    </div>
+        <div class="form-group">
+           <div class="row2">
             <label for="text">Ваше сообщение</label>
             <textarea id="text" rows="2"></textarea>
-            <input type="submit">
-
-
+            <input class="btn" type="submit">
+        </div>
+        </div>
          </form>
+        </div>
     </main>
 
     <footer>

@@ -3,71 +3,69 @@
 <head>
     <meta charset="utf-8">
     <title>Моя первая веб-страница</title>
+   <link rel="stylesheet" href="/site/css/styles.css">
 </head>
-<body>
-    <header>
-        <a href="#">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
-    </header>
-    <main>
-        <h1>Моя первая веб-страница</h1>
-        <h2>Про меня</h2>
-        <p>Привет, меня зовут <strong>Евгений</strong> мне 32 года, я работаю сварщиком , работа мне нравиться и получаю хорошую зароботную плату но с годами все превратилось в рутину и начал пропадать интерес. Решил что хочу полностью сменить род деятельности, поступил на курсы <a href="https://skillfactory.ru/" target="_blank">SkillFactroty</a> чтобы разобраться как устроен веб.</p>
-        <p>Родился в <b>Астане</b>, пару лет назад перебрался в <b>Таллин</b>.</p>
-        <p><b>Мои интересы</b>
-        <ul>
-            <li>Тяжелая музыка</li>                                 <!--Список-->
-            <li>Посещение концертов и фестивалей</li>
-            <li>Видеоигры
-                <ol>                                                <!--Вложенный писок-->
-                    <li>Fallout</li>
-                    <li>MassEffect</li>
-                    <li>Skyrim</li>
-                </ol>
-            </li>
-        </ul>
+    <body>
+        <div class="container">
+        <header>
+            <a href="#">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </header>
+        <main>
+            <h1>Моя первая веб-страница</h1>
+            <h2>Про меня</h2>
+            <p>Привет, меня зовут <strong>Евгений</strong> мне 32 года, я работаю сварщиком , работа мне нравиться и получаю хорошую зароботную плату но с годами все превратилось в рутину и начал пропадать интерес. Решил что хочу полностью сменить род деятельности, поступил на курсы <a href="https://skillfactory.ru/" target="_blank">SkillFactroty</a> чтобы разобраться как устроен веб.</p>
+            <p>Родился в <b>Астане</b>, пару лет назад перебрался в <b>Таллин</b>.</p>
+            <p><b>Мои интересы</b>
+            <ul class="link-list">
+                <li>Тяжелая музыка</li>                                 <!--Список-->
+                <li>Посещение концертов и фестивалей</li>
+                <li>Видеоигры
+                    <ol id="games">                                                <!--Вложенный писок-->
+                        <li>Fallout</li>
+                        <li>MassEffect</li>
+                        <li>Skyrim</li>
+                    </ol>
+                </li>
+            </ul>
 
-        <h2>Чему я научился</h2>
-        <table>
-        <thead><tr>
-                <th>Язык</th>
-                <th>Пункт 1</th>
-                <th>Пункт 2</th>
-            </tr>
-        </thead>
-        <tbody><tr>
-            <td><strong>HTML</strong></td>
-            <td>Основные теги</td>
-            <td>Семантическая верстка</td>
-         </tr>  
-         <tr>
-            <td><strong>CSS</strong></td>
-            <td>-</td>
-            <td>-</td>
-         </tr>  
-         <tr>
-            <td><strong>JS</strong></td>
-            <td>-</td>
-            <td>-</td>
-         </tr>  
-        </tbody>
-        </table>
-        <p>На <em>этом</em> курсе я понял что умственный труд ни чуть не легче физического</p>
-    </main>
-    <!--
-    <aside>   Это должен был быть side блок, но без css он не отображаеться как было задуманно
-        <h4>тутмоглабытьвашареклама</h4>
-        <p>увеличениесамооценкина10пунктов</p> 
-      </aside>
-      -->
-    <footer>
-    <table>
-        <tr>
-            <td><img title="SkillFactory" src="https://lms.skillfactory.ru/static/rg-theme/images/logo-header.svg" alt="logo"> <!--ОТНОСИТЕЛЬНЫЙ ПУТЬ site\images\logo-header.svg НЕ СРАБОТАЛ, ЛОГО НЕ ОТОБРАЖАЕТЬСЯ--></td>
-            <td><span>&copy;&nbsp;Skillfactory</span></td>
-        </tr>
-      </table>
-    </footer>
-</body>
+            <h4>Чему я научился</h4>
+            <hr>
+            <table class="table">
+            <thead><tr>
+                    <th>Язык</th>
+                    <th>Пункт 1</th>
+                    <th>Пункт 2</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td><strong>HTML</strong></td>
+                <td>Основные теги</td>
+                <td>Семантическая верстка</td>
+            </tr>  
+            <tr>
+                <td><strong>CSS</strong></td>
+                <td>Стилизация форм</td>
+                <td>Стилизация кнопок</td>
+            </tr>  
+            <tr>
+                <td><strong>JS</strong></td>
+                <td>-</td>
+                <td>-</td>
+            </tr>  
+            </tbody>
+            </table>
+        <hr>
+            <p>На <em>этом</em> курсе я понял что умственный труд ни чуть не легче физического</p>
+        </main>
+
+        <footer>
+    <div class="info">
+        <p><img title="SkillFactory" src="https://lms.skillfactory.ru/static/rg-theme/images/logo-header.svg" alt="logo" class="logo" ></p>
+        <p><span>&copy;&nbsp;Skillfactory & Students</span></p>
+    </div>
+        </footer>
+    </div>
+    </body>
 </html>
